@@ -2,7 +2,7 @@
 //We need to inclued queue headerfile to include priority queue
 #include<iostream>
 using namespace std;
-
+//Priority queue uses either min or  max heap , it has timecomplexity of O(logn) in all cases
 void priority(){
     priority_queue<int>pq;
     pq.push(10);
