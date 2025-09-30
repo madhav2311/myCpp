@@ -11,9 +11,8 @@ class person{
     
     person(string n,int a):name(n),age(a){
         cout<<"Constructor called for "<<name<<endl;
-
-
     }
+
     //const is used to make sure no data passed as parameter get changed with any value ,if const is used it make sure no functions manipuate the data 
     //other refers to the other variables inside passed object 
 
@@ -22,8 +21,6 @@ class person{
         name=other.name;
         age=other.age;
         cout<<"Constructor called to copy "<<name<<endl;
-
-
     }
     //here we are creating a method to print our person object variables
     void print() const {
@@ -82,7 +79,6 @@ int main(){
     l1.emplace_back("maddy",19);
     //here emplace_back used the passed data to construct a object of person type and initialized that object with the passed data ,
     //it do inplace construction of the objects
-
     for(const person &x:l1){
         x.print();
     }
@@ -105,7 +101,7 @@ for(int val:l2){
     cout<<" hh "<<val<<endl;
 }
 list<int>l3={5,4,3,2,1};
-//this fumctions sorts the list 
+//this functions sorts the list 
 l3.sort();
 for(int val:l3){
     cout<<val<<" ";
