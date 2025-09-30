@@ -9,14 +9,16 @@ using namespace std;
 // RANDOM ACCESS IN DEQUE IS POSSIBLE BUT NOT IN LIST, we can randomly access but we need to know the reference address of the element(like index) 
 void deque_func(){
     deque<int>d={1,2,3,4,5};
-
+//--------------------------------------------------------------------------------------------------------------------------------------------------
     //Rest of the operations are same
     //push_back(val),emplace_back(),front(),last(),begin(),end(),erase(iterator or index),clear(),empty(),size(),capacity(),insert()etc
     //iterators include rbegin,rend etc
     cout<<d[1]<<endl; //prints 2
 
 }
+//--------------------------------------------------------------------------------------------------------------------------------------------------
 int main(){
     deque_func();
     return 0;
 }
+//--------------------------------------------------------------------------------------------------------------------------------------------------
