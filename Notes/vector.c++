@@ -17,16 +17,16 @@ int main(){
        }
        
        //capacity is used to check the capacity is left in a vector or to know total capacity of a vector
-       //in vector after before inserting a new value 
-       //it vreates a new memory twice the initial size of the vector then copies the old elements and inserts new element 
-       //it vreates a new memory twice the initial size of the vector then copies the old elements and inserts new element 
+       //in vector before inserting a new value 
+       //it creates a new memory twice the initial size of the vector then copies the old elements and inserts new element 
+       //it creates a new memory twice the initial size of the vector then copies the old elements and inserts new element 
        //this happens if the capacity is equal to the size of the vector
        cout<<endl;
        cout<<vec.capacity()<<endl;
        //size displays the size of the vector
        cout<<vec.size()<<endl;
        cout<<vec.at(2)<<endl;
-       //used to create a vector eith same values , used in tabulation and dp tables
+       //used to create a vector with same values , used in tabulation and dp tables
        cout<<endl;
        vector<int>vec1(5,1);
        for(int val:vec1){
@@ -39,13 +39,13 @@ int main(){
                }
         cout<<endl;
 
-   //erase can be used to delete an element at any index using begin or end 
+   //erase can be used to delete an element at any index using begin or end O(n)
    vec.erase(vec.begin()+1);
    for(int val:vec){
     cout<<val<<endl;
    }
    cout<<endl;
-   //insert can be used to isnert an element at any index using position (begin or end),with an element value
+   //insert can be used to isnert an element at any index using position (begin or end),with an element value O(n)
    vec.insert(vec.begin()+1,2);
     for(int val:vec){
     cout<<val<<endl;
@@ -58,7 +58,7 @@ int main(){
 
    //iterator, here it is a iterator the holds the address or memory location of a element ,
    //but can be accessed using * deferencing is done 
-   //vec1.end() points to the next memory address after teh last elements memory address
+   //vec1.end() points to the next memory address after the last element's memory address
    vector<int>::iterator it;
    vec1={1,2,3,4,5};
    //rend() points to the memory address before the first element in the vector
